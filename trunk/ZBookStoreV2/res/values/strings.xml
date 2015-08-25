@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">D-ZBookStore</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="credits">credits</string>
+    <string name="product_name">Sản phẩm</string>
+    <string name="product_quantity">Số lượng</string>
+    <string name="product_price">Giá</string>
+
+    <string-array name="product_quantities">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string name="ly_zalo">Ly Zalo</string>
+    <string name="fiveunits">5.000</string>
+    <string name="ctshirt">Áo thun cặp zalo</string>
+    <string name="tshirt">Áo thun zalo</string>
+    <string name="tenunits">10.000</string>
+    <string name="seventeenunits">17.000</string>
+    <string name="pay">Thanh toán</string>
+    <string name="title_activity_billing">BillingActivity</string>
+    <string name="authorlb">Tác giả:</string>
+    <string name="paylb">Mua</string>
+    <string name="_75000_vnd">75000 VND</string>
+    <string name="zero">0</string>
+    <string name="x">x</string>
+
+</resources>

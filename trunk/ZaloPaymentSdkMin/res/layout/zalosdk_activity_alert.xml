@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="240dip"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"    
+    tools:context=".PaymentGatewayActivity"
+    android:background="@color/zalosdk_white"    
+     >
+	<TextView 
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:text="@string/zalosdk_notification"
+        android:padding="7dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:textAlignment="center"
+        android:background="@drawable/zalosdk_border11"
+        android:textSize="16sp"  
+	    />
+	
+	<TextView
+	        android:id="@+id/zalosdk_message_ctl"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:minHeight="75dip"
+	        android:layout_gravity="center"
+	        android:gravity="center"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip"
+	        android:paddingTop="2dip"
+	        android:paddingBottom="2dip"
+	        android:text="@string/zalosdk_processing"
+	        android:textColor="#000"
+	        android:textSize="14sp"         
+        />
+    
+
+    <ImageView
+        android:id="@+id/zalosdk_status_ctl"
+        android:layout_width="32dip"
+        android:layout_height="32dip"
+        android:layout_margin="5dip"
+        android:contentDescription="@string/zalosdk_app_name"
+        android:src="@drawable/zalosdk_btn_close"
+        android:visibility="gone" />
+
+      <TextView
+         android:id="@+id/zalosdk_ok_ctl"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center_horizontal"
+         android:background="@drawable/zalosdk_border07"
+         android:gravity="center"
+         android:paddingBottom="10dip"
+         android:paddingTop="10dip"
+         android:text="@string/zalosdk_close"
+         android:textColor="#fff"
+         android:textSize="14sp"
+         android:textStyle="bold" />
+</LinearLayout>

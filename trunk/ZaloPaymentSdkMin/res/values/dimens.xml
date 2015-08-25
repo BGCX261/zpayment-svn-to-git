@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="zalosdk_outer01">5dip</dimen>
+    <dimen name="zalosdk_outer02">2dip</dimen>
+</resources>

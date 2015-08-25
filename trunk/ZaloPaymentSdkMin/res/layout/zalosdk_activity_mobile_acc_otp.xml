@@ -1,0 +1,238 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eaeaea"
+    android:orientation="vertical"
+    tools:context=".PaymentGatewayActivity" >
+
+    <LinearLayout
+        android:id="@+id/zalosdk_logo_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#05a3e5" >
+
+        <ImageView
+            android:id="@+id/zalosdk_zalopay_logo"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:contentDescription="@string/zalosdk_app_name"
+            android:padding="2dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/zalosdk_zalopay_logo" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:background="@drawable/zalosdk_border00" >
+
+        <ImageView
+            android:id="@+id/zalosdk_exit_ctl"
+            android:layout_width="37dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/zalosdk_app_name"
+            android:padding="4dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/zalosdk_btn_close" />
+
+        <TextView
+            android:id="@+id/zalosdk_mobileacc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:height="40dip"
+            android:text="@string/zalosdk_mobileacc"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/zalosdk_back_ctl"
+            android:layout_width="37dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:contentDescription="@string/zalosdk_app_name"
+            android:padding="4dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/zalosdk_btn_back" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal" 
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dip"
+            android:background="#eaeaea"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dip"
+            >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:background="@drawable/zalosdk_border09"
+                android:orientation="vertical"
+                android:padding="10dip"
+                android:visibility="gone"
+                 >
+                <RelativeLayout
+                	android:id="@+id/zalosdk_togle_bill_ctl"    
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center_vertical"
+                        android:text="@string/zalosdk_billinfo" />
+
+                    <ImageView
+                        android:id="@+id/zalosdk_show_ctl"
+                        android:layout_width="20dip"
+                        android:layout_height="20dip"
+                        android:layout_alignParentRight="true"
+                        android:contentDescription="@string/zalosdk_app_name"
+                        android:src="@drawable/zalosdk_btn_show" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/zalosdk_bill_info_ctn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/zalosdk_bill_info_ctl"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:text="@string/zalosdk_billdes"
+                        android:textColor="#05a3e5" />                    
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="5dip"
+                        android:text="@string/zalosdk_billno" />
+
+                    
+                    <TextView
+                        android:id="@+id/zalosdk_bill_id_ctl"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:text="@string/zalosdk_lk_mbc48374652"
+                        android:textColor="#05a3e5" />
+                    
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="5dip"
+                        android:text="@string/zalosdk_provider_info" />
+
+                    <TextView
+                        android:id="@+id/zalosdk_bill_provider_ctl"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:text="@string/zalosdk_provider_name"
+                        android:textColor="#05a3e5" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/view_root"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:background="@drawable/zalosdk_border09"
+                android:orientation="vertical"
+                android:padding="10dip" >
+
+                <TextView
+                    android:id="@+id/zalosdk_otp_note_ctl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zalosdk_otp_note"
+                    android:textSize="14sp"
+                    android:textColor="#222"
+                    android:gravity="center"
+                    android:layout_marginBottom="2dip"
+                    android:visibility="gone"
+                     />
+
+                <EditText
+                    android:id="@+id/zalosdk_otp_ctl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:background="@drawable/zalosdk_border06"
+                    android:hint="@string/zalosdk_otp"
+                    android:imeOptions="actionGo"
+                    android:inputType="textNoSuggestions"
+                    android:maxLength="12"
+                    android:padding="10dip"
+                    android:singleLine="true"
+                    android:textSize="14sp"
+                    android:textStyle="italic" 
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/zalosdk_ok_ctl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="50dip"
+                    android:layout_marginRight="50dip"
+                    android:layout_marginTop="10dip"
+                    android:layout_marginBottom="5dip"
+                    android:background="@drawable/zalosdk_border07"
+                    android:gravity="center"
+                    android:paddingBottom="15dip"
+                    android:paddingTop="15dip"
+                    android:text="@string/zalosdk_ok"
+                    android:textColor="#fff"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/zalosdk_call_ctl"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="5dip"
+                android:gravity="center"
+                android:minHeight="50dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/zalosdk_hotline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zalosdk_hotline" />
+
+                <TextView
+                    android:id="@+id/zalosdk_hotline_ctl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zalosdk_1900_561_558"
+                    android:textColor="#05a3e5"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

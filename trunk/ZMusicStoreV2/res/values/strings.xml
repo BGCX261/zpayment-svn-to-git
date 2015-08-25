@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ZMusic Store</string>
+    <string name="paylb">Mua</string>
+    <string name="_50_xu">50 xu</string>
+    <string name="dungttm">DungTTM</string>
+    <string name="pay">Nạp thêm</string>
+    <string name="close">Đóng</string>
+    <string name="convert">(1 xu = 1.000 đ)</string>
+    <string name="push_nt">Ấn "Nạp thêm" để thêm tiền vào tài khoản</string>
+    <string name="credit">Bạn có 5 xu trong tài khoản</string>
+    <string name="your_ms">Nhạc của bạn</string>    
+</resources>

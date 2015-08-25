@@ -1,0 +1,379 @@
+<html>
+	<head>
+		<meta name="viewport" content="zoom: auto;width=device-width, initial-scale=1, maximum-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="format-detection" content="telephone=no">
+		<style type="text/css">
+			@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=vietnamese);
+			*:not(input) {
+				font-family: 'Open Sans', sans-serif;
+				font-size: 14px;
+			    -webkit-backface-visibility: hidden;
+			    -webkit-user-select: none;
+			    -moz-user-select: none;
+			    -ms-user-select: none;
+			    -o-user-select: none;
+			    user-select: none;
+			}
+			body { 
+			  background-color: #e7ebf2; 
+			  padding: 0px !important;
+			  margin: 0px !important;
+			  font-size:16px; 
+			  direction: ltr;
+			}
+
+			.clear {
+				clear: both;
+			}
+
+			.dialog {
+				min-width: 200px;
+				background-color: #ffffff;
+				margin: auto;
+				margin-top: 50px;
+				margin-bottom: 50px;
+			}
+
+			.permission {
+			}
+
+			.dialog .permission-head {
+				background: url("../img/header.jpg");
+				background-repeat: no-repeat;
+				height: 150px;
+			}
+
+			.dialog .permission-body {
+				width: 850px;
+			} 
+
+			.dialog .permission-body img{
+				height: 50px;
+				float: left;
+			}
+
+			.permission-body .logos {
+				height: 50px;
+				margin-top: 30px;
+			}
+
+			.header {
+				height: 32px;
+				margin-top: 11px;
+				text-align: center;
+				font-size: 18px;
+				font-weight: bold;
+			}
+
+			.logos .logo-left {
+				float: left;
+				height: 50px;
+				top: 20px;
+				left: 20px;
+				position: absolute;
+			} 
+
+			.logos .logo-left .appName {
+				margin-left: 10px;
+				font-weight: 900;
+			}
+			.logos .logo-left .company {
+				margin-left: 10px;
+				color: #777;
+			}
+
+			.logos .logo-right {
+				height: 64px;
+				position: absolute;
+				top: 20px;
+				right: 20px;
+			}
+
+			.permission-body .title {
+				margin-left: 20px;
+				margin-right: 20px;
+				padding-top: 10px;
+				border-top: 1px solid #aaa;
+			}
+
+			.permission-body .passwordForm {
+				margin-left: 20px;
+				margin-right: 20px;
+				padding-top: 10px;
+				border-top: 1px solid #aaa;
+			}
+			.passwordForm img.avatar{
+				height: 60px;
+				border: 1px solid #999999;
+				margin-right: 10px;
+			}
+
+			.passwordForm .phone {
+				font-weight: bold;
+			}
+			.passwordForm input.password, .buttons input {
+				width: 100%;
+				line-height: 30px;
+				font-size: 18px;
+				margin-top: 10px;
+				border: 1px solid #aaa;
+				padding: 0px;
+				-webkit-appearance: none;
+				-webkit-border-radius: 0px;
+				-moz-border-radius: 0px;
+				border-radius: 0px;
+			}
+
+			.dialog .permission-info {
+				margin-top: 20px;
+				margin-left: 250px;
+				margin-right: 250px;
+			}
+
+			.dialog .permission-info .control-group {
+				height: 35px;
+				padding-top: 10px;
+			}
+
+			.dialog .permission-info .control-group .label {
+				float: left;
+				width: 80%;
+				line-height: 35px;
+				font-size: 18;
+			}
+
+			.dialog .permission-info .control-group .controls {
+				float: right;
+				width: 20%;
+			}
+
+			.paymentTitle {
+				font-weight: 900;
+				margin: 0px;
+				margin-bottom: 0px;
+				line-height: 15px;
+			}
+			.total {
+				color: #05a3e5;
+				font-size: 15px;
+				font-weight: 900;
+			}
+			.items {
+				font-size: 15px;
+			}
+
+			.button-group {
+				width: 100%;
+			}
+
+			.btn {
+				float: left;
+				border: none;
+				background: #bdc3c7;
+				color: #ffffff;
+				padding: 12px 0px;
+				margin-bottom: -2px;
+				line-height: 22px;
+				text-decoration: none;
+				width: 50%;
+			}
+
+			.btn.full {
+				width: 100%;
+			}
+
+			.btn.btn-lg {
+			  font-size: 17px;
+			  line-height: 20px;
+			}
+
+			.btn-list.left {
+				float: left;
+				padding-bottom: 10px;
+				width:50%;
+			}
+
+			.btn-list.left div {
+				padding-right: 5px;
+				padding-left: 10px;
+			}
+
+			.btn-list.right {
+				float: right;
+				padding-bottom: 10px;
+				width:50%;
+			}
+
+			.btn-list.right div {
+				padding-right: 10px;
+				padding-left: 5px;
+			}
+
+			.btn.btn-list {
+				width:100%;
+			}
+
+			.btn.btn-ok {
+			 	background-color: #3498db;
+			}
+
+			.btn.btn-ok:hover,
+			.btn.btn-ok:focus {
+				background-color: #5dade2;
+			}
+
+			.btn.btn-disabled {
+			 	background-color: #5dade2;
+			 	color: #bdc3c7;
+			}
+
+			.btn.btn-cancel {
+			 	background-color: #bdc3c7;
+			}
+
+			.btn.btn-cancel:hover,
+			.btn.btn-cancel:focus {
+			  background-color: #cacfd2;
+			}
+
+
+
+			body {
+				background-color: #fff;
+			}
+			.dialog {
+				width: 100%;
+				margin: 0px;
+			}
+
+			.dialog .permission-body  {
+				width: 100%;
+			}
+
+			.button-group {
+				width: 100%;
+				text-align: center;
+			}
+
+			.dialog .permission-info {
+				margin-left: 0px;
+				margin-right: 0px;
+			}
+
+			.dialog .permission-info .control-group {
+				margin-left: 10px;
+				margin-right: 10px;
+			}
+
+			.remain {
+				border-top: 1px solid #aaa;
+				margin: 10px 20px 10px 20px;
+			}
+
+			.remain p {
+				line-height: 8px;
+			}
+
+			.remain p.need b {
+				color: #CC0606;
+			}
+
+			.buttons {
+				margin-left: 20px;
+				margin-right: 20px;
+				padding-top: 15px;
+				border-top: 1px solid #aaa;
+			}
+
+			.buttons .btn {
+				text-align: center;
+				width: 48%;
+				margin: 1%;
+				font-size: 15px;
+			}
+
+			.buttons .btn.disable {
+				color: #aaa;
+			}
+
+			.buttons center {
+				margin-bottom: 5px;
+			}
+
+			center.remainMoney {
+				color: #3498db;
+				margin-top: 10px;
+				font-style: italic;
+			}
+			.networks {
+				text-align: center;
+			}
+			.networks button.network {
+				border: 1px solid #3498db;
+				background: #ffffff;
+				color: #3498db;
+				padding: 6px 0px;
+				line-height: 22px;
+				text-decoration: none;
+				width: 70px;
+				margin-right: 5px;
+			}
+			.networks button.network.active {
+				border: 1px solid #3498db;
+				background: #3498db;
+				color: #ffffff;
+			}
+			.warning-form {
+				margin-left: 20px;
+				margin-right: 20px;
+				padding-top: 10px;
+				border-top: 1px solid #aaa;
+			}
+			.warning-form .warning-icon {
+				background: url("warning-icon.jpg");
+				background-repeat: no-repeat;
+				background-size: 64px 59px;
+				height: 60px !important;
+				padding-left: 80px;
+				float: left;
+			}
+			.warning-form .warning-message {
+
+			}
+			::-webkit-input-placeholder {
+			   font-style: italic;
+			}
+			:-ms-input-placeholder {  
+			   font-style: italic;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="dialog">
+			<div class="permission-body">
+				<script type="text/javascript">
+					var closeDlg = function() {
+						window.location='http://callback.zalosdk.android';
+					};				
+				</script>
+				<div class="header">
+					Thông báo
+				</div>
+
+				<div class="warning-form">
+					<div class="warning-icon"></div>
+					<div class="warning-message">
+						Không thể kết nối đến máy chủ. Vui lòng kiểm tra lại kết nối.
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="permission-info">
+					<div class="button-group">
+						<button class="btn btn-ok btn-lg full" onclick="closeDlg();">Đóng</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

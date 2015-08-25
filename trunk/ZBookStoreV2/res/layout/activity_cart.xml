@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:layout_marginTop="10dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingTop="5dp" >
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="#24a9c7"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+    
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_tv" >
+
+        <TextView 
+		    android:id="@+id/quantity_tv"
+		    android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"            
+            android:textStyle="bold"
+            android:textColor="#1ea3eb"
+            android:textSize="18sp"
+            android:text="@string/zero"
+		    />
+        
+		<TextView
+		    android:id="@+id/x_tv"
+		    android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/quantity_tv"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:textColor="#1ea3eb"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="@string/x" />
+		
+		
+		<TextView
+            android:id="@+id/price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/x_tv"		    
+            android:layout_centerVertical="true"
+            android:textStyle="bold|italic"
+            android:textColor="#6e6e6e"
+            android:textSize="18sp"
+            android:text="@string/_75000_vnd" />
+		
+		<ImageButton
+            android:id="@+id/remove_bt"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/action_remove" 
+            android:contentDescription="@string/app_name"
+            />
+		
+        <ImageButton
+            android:id="@+id/minus_bt"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_toLeftOf="@id/remove_bt"
+            android:background="@drawable/action_minus" 
+            android:contentDescription="@string/app_name"
+            android:layout_marginLeft="5dp"            
+            android:layout_marginRight="5dp"
+            />
+        
+        <ImageButton
+            android:id="@+id/add_bt"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_toLeftOf="@id/minus_bt"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/action_add" 
+            android:contentDescription="@string/app_name"
+            />
+    </RelativeLayout>
+</RelativeLayout>
